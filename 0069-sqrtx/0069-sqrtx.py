@@ -8,7 +8,8 @@ class Solution:
         right = x
 
         while left <= right:
-            mid = left + (right-left) // 2
+            # mid = left + (right-left) // 2
+            mid = (left+right)//2
             pot = mid*mid
             if pot == x:
                 return mid
